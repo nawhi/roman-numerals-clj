@@ -3,6 +3,8 @@
             [roman-numerals.core :refer :all]))
 
 (deftest roman-numerals.core-test
-  (testing "FIXME, I fail."
-    (are [num expected] (= (roman-numeral num) expected)
-                        1 "I")))
+  (testing
+    (are [num expected] (= expected (roman-numeral num))
+                        1 "I"
+                        2 "II"
+                        3 "III")))

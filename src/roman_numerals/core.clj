@@ -1,6 +1,6 @@
-(ns roman-numerals.core)
+(ns roman-numerals.core (:require [clojure.string :as str]))
 
 (defn roman-numeral
   "Convert a number to its equivalent in Roman Numerals"
   [n]
-  "I")
+  (str/join (repeat n "I")))
