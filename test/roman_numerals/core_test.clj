@@ -7,4 +7,5 @@
     (are [num expected] (= expected (roman-numeral num))
                         1 "I"
                         2 "II"
-                        3 "III")))
+                        3 "III"
+                        4 "IV")))
